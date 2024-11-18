@@ -24,7 +24,8 @@ defmodule DoctestFormatterLineLength do
       iex> my_very_long_function("hello world", "My second Argument", "My third Argument", "My fourth Argument")
       ["My second Argument", "My third Argument", "My fourth Argument"]
   """
-  def my_very_long_function(argument_1, argument_2, argument_3, argument_4) when is_binary(argument_1) do
+  def my_very_long_function(argument_1, argument_2, argument_3, argument_4)
+      when is_binary(argument_1) do
     [argument_2, argument_3, argument_4]
   end
 end
